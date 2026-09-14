@@ -1,4 +1,4 @@
-<img src="assets/profile-banner.svg" alt="Lim Zi Chao — AI, Software and Data Engineering. NUS Computer Science and Mathematics. ASEAN Undergraduate Scholar." width="100%" />
+<img src="assets/profile-banner.png" alt="Lim Zi Chao — AI, Software and Data Engineering. NUS Computer Science and Mathematics. ASEAN Undergraduate Scholar." width="100%" />
 
 <p align="center">
   <a href="#selected-system"><strong>Selected system</strong></a>
