@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="248" viewBox="0 0 1200 248" role="img" aria-labelledby="title desc">
+  <title id="title">Selected proof</title><desc id="desc">Four verified engineering highlights from Lim Zi Chao's résumé.</desc>
+  <rect width="1200" height="248" rx="20" fill="#111820"/><path d="M300 44v160M600 44v160M900 44v160" stroke="#293747"/><path d="M44 36h1112" stroke="#5D8CFF" stroke-width="3"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(48 82)"><text fill="#F4F7FB" font-size="54" font-weight="700">5TH</text><text y="39" fill="#7EA5FF" font-size="15" letter-spacing="2">TIKTOK TECHJAM 2026</text><text y="71" fill="#9DADBF" font-size="14">TEAM LEAD · 5 PEOPLE</text></g>
+    <g transform="translate(348 82)"><text fill="#F4F7FB" font-size="54" font-weight="700">50K</text><text y="39" fill="#7EA5FF" font-size="15" letter-spacing="2">PRODUCT CATALOG</text><text y="71" fill="#9DADBF" font-size="14">HYBRID RETRIEVAL</text></g>
+    <g transform="translate(648 82)"><text fill="#F4F7FB" font-size="54" font-weight="700">44.43</text><text y="39" fill="#7EA5FF" font-size="15" letter-spacing="2">MS P95 LATENCY</text><text y="71" fill="#9DADBF" font-size="14">MEASURED SYSTEM</text></g>
+    <g transform="translate(948 82)"><text fill="#F4F7FB" font-size="54" font-weight="700">ZERO</text><text y="39" fill="#7EA5FF" font-size="15" letter-spacing="2">RUNTIME API CALLS</text><text y="71" fill="#9DADBF" font-size="14">CPU-ONLY PATH</text></g>
+  </g>
+</svg>
