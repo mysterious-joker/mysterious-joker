@@ -5,7 +5,7 @@ The profile is a technical portfolio dossier rendered entirely by GitHub. Recrui
 ## Visual system
 
 - The hero uses graphite `#111820`, cobalt `#5D8CFF`, pale blue `#7EA5FF`, and off-white `#F4F7FB`.
-- The hero is a photorealistic 3D exploded compute object. It is the profile's only banner so project evidence remains quiet and readable in native GitHub typography.
+- The hero is a restrained, text-led composition with subtle grid and line details. It contains no logo or illustrated object, keeping the profile elegant and recruiter-focused.
 
 ## Composition
 

@@ -1,4 +1,4 @@
-<img src="assets/profile-banner.png" alt="Lim Zi Chao — AI, Search and Data Engineering. NUS Computer Science and Mathematics. ASEAN Undergraduate Scholar." width="100%" />
+<img src="assets/profile-banner.svg" alt="Lim Zi Chao — AI, Software and Data Engineering. NUS Computer Science and Mathematics. ASEAN Undergraduate Scholar." width="100%" />
 
 <p align="center">
   <a href="#selected-system"><strong>Selected system</strong></a>
@@ -18,7 +18,7 @@
 
 Search that retrieves the right evidence. Data infrastructure that stays governed and replayable. Agent workflows that connect both.
 
-I'm **Lim Zi Chao**, an NUS Computer Science undergraduate pursuing a second major in Mathematics, an **ASEAN Undergraduate Scholar**, and a **Data Engineer Intern at Bright Point Capital / Theme International Trading**.
+I'm **Lim Zi Chao**, an NUS Computer Science undergraduate pursuing a second major in Mathematics, an **ASEAN Undergraduate Scholar**, and a **Data Engineer Intern at Theme International Trading**.
 
 <p>
   <a href="mailto:zichao2006@gmail.com"><strong>Discuss a 2027 internship →</strong></a>
@@ -30,7 +30,7 @@ I'm **Lim Zi Chao**, an NUS Computer Science undergraduate pursuing a second maj
 
 ## Selected system
 
-### [Shopping Copilot — TikTok TechJam 2026](https://github.com/mysterious-joker/TTSC)
+### [Shopping Copilot — TikTok TechJam 2026](https://github.com/i-anything/TTSC)
 
 **Team lead · 5th place · 72-hour build · Presented at TikTok Singapore**
 
@@ -60,7 +60,7 @@ These are public development-set results. Hardware, workload, and evaluation dis
 
 The system is deterministic and fail-open: every session is reproducible, and lexical retrieval remains available when dense assets cannot initialize. Runtime cost is **USD 0** because reset and response paths make no hosted-model or external API calls.
 
-[Read the source and technical documentation →](https://github.com/mysterious-joker/TTSC) &nbsp;·&nbsp; [See team contributions →](https://github.com/mysterious-joker/TTSC#team-contributions)
+[Read the source and technical documentation →](https://github.com/i-anything/TTSC) &nbsp;·&nbsp; [See team contributions →](https://github.com/i-anything/TTSC#team-contributions)
 
 </details>
 

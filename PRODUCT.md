@@ -37,9 +37,9 @@ Name: Lim Zi Chao. Voice: technically credible, ambitious, concise, and careful 
 ## Evidence on Hand
 
 - User-supplied résumé: `/Users/limzichao/Downloads/Lim_Zi_Chao_TikTok_2027_Intern_Resume.pdf`.
-- Public repositories: `mysterious-joker/TTSC`, `lzc-nus/Plutus`, `lzc-nus/ip`.
+- Public repositories: `i-anything/TTSC`, `lzc-nus/Plutus`, `lzc-nus/ip`.
 - LinkedIn URL supplied by user: `https://www.linkedin.com/in/limzichao/`; profile content was not readable without sign-in.
-- Existing generated 3D banner: `assets/profile-banner.png`.
+- Text-led profile banner: `assets/profile-banner.svg`.
 
 ## Product Principles
 
