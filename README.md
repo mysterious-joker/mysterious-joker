@@ -1,7 +1,7 @@
 <img src="https://raw.githubusercontent.com/mysterious-joker/mysterious-joker/main/assets/profile-header.png?v=1" alt="Lim Zi Chao — AI, Software and Data Engineering. NUS Computer Science and Mathematics. ASEAN Undergraduate Scholar." width="100%" />
 
 <p align="center">
-  <a href="#selected-system"><strong>Selected system</strong></a>
+  <a href="#selected-system"><strong>Selected Projects</strong></a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="#experience"><strong>Experience</strong></a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
@@ -20,7 +20,7 @@ I'm **Lim Zi Chao**, an NUS Computer Science undergraduate pursuing a second maj
 
 <a id="selected-system"></a>
 
-## Selected Project
+## Selected Personal Projects
 
 ### [Shopping Copilot — TikTok TechJam 2026](https://github.com/i-anything/TTSC)
 
