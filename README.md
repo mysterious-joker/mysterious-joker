@@ -12,7 +12,7 @@
   <a href="https://www.linkedin.com/in/limzichao/"><strong>LinkedIn ↗</strong></a>
 </p>
 
-I'm **Lim Zi Chao**, an NUS Computer Science undergraduate pursuing a second major in Mathematics, an **ASEAN Undergraduate Scholar**, and a **Data Engineer Intern at Theme International Trading, a quantitative trading firm**.
+I'm **Lim Zi Chao**, an NUS Computer Science undergraduate pursuing a second major in Mathematics, an **ASEAN Undergraduate Scholar**, and a **Data Engineer Intern at Theme International Trading**.
 
 <p>
   <a href="https://www.linkedin.com/in/limzichao/">Connect on LinkedIn</a>
@@ -20,11 +20,11 @@ I'm **Lim Zi Chao**, an NUS Computer Science undergraduate pursuing a second maj
 
 <a id="selected-system"></a>
 
-## Selected system
+## Selected Project
 
 ### [Shopping Copilot — TikTok TechJam 2026](https://github.com/i-anything/TTSC)
 
-**Team lead · 5th place · 72-hour build · Presented at TikTok Singapore**
+**Team lead · 5th place · Presented at TikTok Singapore**
 
 I led a five-person team and owned the hybrid retrieval architecture for a deterministic, CPU-only conversational search agent over 50,000 products. It asks focused questions, fuses lexical and semantic evidence, and returns ranked recommendations without runtime network access or paid APIs.
 
@@ -58,7 +58,7 @@ The system is deterministic and fail-open: every session is reproducible, and le
 
 <br>
 
-## Selected NUS builds
+## Selected NUS Projects
 
 My coursework and school projects live on **[@lzc-nus](https://github.com/lzc-nus)**, while this account stays focused on personal and professional work.
 
@@ -84,7 +84,7 @@ My coursework and school projects live on **[@lzc-nus](https://github.com/lzc-nu
 ## Experience
 
 <details>
-<summary><strong>What I build in data engineering</strong></summary>
+<summary><strong>What I build as a data engineer intern at quantitative trading firm</strong></summary>
 
 - Engineer Python and SQL infrastructure connecting market information and governed PostgreSQL datasets to analyst and AI-agent workflows.
 - Architected a source-to-canonical commodity-data pipeline spanning API and blob ingestion, transformation, staging, validation, lineage, replayability, and controlled publication.
