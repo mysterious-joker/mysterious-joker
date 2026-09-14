@@ -1,12 +1,9 @@
-# Maintaining the profile
+# Maintaining this GitHub profile
 
-README.md belongs in the public `mysterious-joker/mysterious-joker` repository. Keep `assets/studio-banner.png` alongside it.
+The entire presentation lives in README.md and assets/profile-banner.png and renders directly on the GitHub profile. GitHub-native details/summary sections provide expandable technical and career information. No external portfolio is required or linked.
 
-The linked interactive studio is a static Three.js site. Its source is kept in the companion `studio/` directory of this profile repository. The live Site is deployed separately; changing studio files in GitHub does not automatically deploy the Site.
+Update README.md for project, employment, education, or availability changes. The résumé supplied on 2026-09-14 is the source for biographical claims and TechJam leadership/placement. Public project READMEs provide additional project context. LinkedIn could not be read because it required sign-in, so its URL is a contact link only.
 
-Project claims come from the public repository READMEs, reviewed September 14, 2026. Update project descriptions when the underlying projects change. Do not add individual ownership, competition results, a degree, availability, or contact details without checking them first.
+Keep development-set metrics clearly scoped. Do not conflate team results with individual work. Do not publish private source, internal datasets, credentials, or the résumé PDF without a specific request. The public contact email is used with the user's résumé-based self-promotion request; the phone number is not published.
 
-The banner is a browser render of the authored Three.js scene and HTML in `studio/banner.html`. It uses no generated or stock imagery. Render that page at 1280 × 440 after any visual changes. The main site works with direct repository links even if WebGL is unavailable.
-
-Primary account: https://github.com/mysterious-joker
-NUS account: https://github.com/lzc-nus
+The banner is an AI-generated 3D illustration with typography, not a live canvas. Changing the banner requires replacing the PNG and checking legibility at GitHub profile width. Assets are self-hosted in this repository.
