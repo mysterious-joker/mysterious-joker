@@ -55,12 +55,6 @@ I led a five-person team and designed the core hybrid retrieval architecture: SQ
 
 </details>
 
-### Zilnon · Investment & AI Research
-
-**Ongoing · Private project**
-
-I'm building modular infrastructure for a US-equity research platform that orchestrates AI analysts and combines market data with structured strategy research. A future research-to-execution track is planned; the platform remains a work in progress.
-
 ### [Plutus · NUS Orbital](https://github.com/lzc-nus/Plutus)
 
 **Deployed · Full-stack financial platform**
