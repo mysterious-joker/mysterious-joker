@@ -62,19 +62,19 @@ The system is deterministic and fail-open: every session is reproducible, and le
 
 My coursework and school projects live on **[@lzc-nus](https://github.com/lzc-nus)**, while this account stays focused on personal and professional work.
 
-<table width="100%" cellpadding="16" cellspacing="0">
+<table width="100%" cellpadding="18" cellspacing="0">
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/lzc-nus/Plutus">Plutus ↗</a></h3>
+      <strong><a href="https://github.com/lzc-nus/Plutus">Plutus ↗</a></strong>
       <p><strong>NUS Orbital · Deployed full-stack platform</strong></p>
       <p>A financial platform with protected user-data APIs, validated transaction workflows, and typed frontend/backend contracts.</p>
-      <p><code>Next.js</code> <code>TypeScript</code> <code>FastAPI</code> <code>PostgreSQL</code> <code>Docker</code></p>
+      <div><code>Next.js</code> <code>TypeScript</code> <code>FastAPI</code> <code>PostgreSQL</code> <code>Docker</code></div>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/lzc-nus/ip">Green Chonk ↗</a></h3>
+      <strong><a href="https://github.com/lzc-nus/ip">Green Chonk ↗</a></strong>
       <p><strong>NUS Software Engineering · JavaFX</strong></p>
       <p>A persistent task companion with date-aware scheduling, resilient command parsing, a CLI fallback, and regression tests.</p>
-      <p><code>Java</code> <code>JavaFX</code> <code>Gradle</code> <code>JUnit</code></p>
+      <div><code>Java</code> <code>JavaFX</code> <code>Gradle</code> <code>JUnit</code></div>
     </td>
   </tr>
 </table>
@@ -96,15 +96,10 @@ My coursework and school projects live on **[@lzc-nus](https://github.com/lzc-nu
 <details>
 <summary><strong>Academic foundation and earlier experience</strong></summary>
 
-**National University of Singapore** · B.Comp. Computer Science, Second Major in Mathematics  
-2025–December 2028 expected · ASEAN Undergraduate Scholarship
-
-Relevant coursework: Data Structures & Algorithms, Software Engineering, Database Systems, Computer Organization, Introduction to Data Science, Probability, Linear Algebra, and Calculus.
-
-**Student Associate, NUS Libraries** · December 2025–January 2026  
-Automated batch document processing and output validation with PowerShell, improving naming, organization, and record consistency.
-
-**Languages:** English and Chinese (native/bilingual); Malay (conversational).
+- **National University of Singapore** — B.Comp. Computer Science with a Second Major in Mathematics, expected December 2028; ASEAN Undergraduate Scholar.
+- **Relevant coursework** — Data Structures & Algorithms, Software Engineering, Database Systems, Computer Organization, Introduction to Data Science, Probability, Linear Algebra, and Calculus.
+- **Student Associate, NUS Libraries** — Automated batch document processing and output validation with PowerShell, improving naming, organization, and record consistency (December 2025–January 2026).
+- **Languages** — English and Chinese (native/bilingual); Malay (conversational).
 
 </details>
 
