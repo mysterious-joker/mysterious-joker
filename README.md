@@ -12,7 +12,7 @@
   <a href="https://www.linkedin.com/in/limzichao/"><strong>LinkedIn ↗</strong></a>
 </p>
 
-I'm **Lim Zi Chao**, an NUS Computer Science undergraduate pursuing a second major in Mathematics, an **ASEAN Undergraduate Scholar**, and a **Data Engineer Intern at Theme International Trading**.
+I'm **Lim Zi Chao**, an NUS Computer Science undergraduate pursuing a second major in Mathematics, an **ASEAN Undergraduate Scholar**, and a **Data Engineer Intern at Theme International Trading, a quantitative trading firm**.
 
 <p>
   <a href="https://www.linkedin.com/in/limzichao/">Connect on LinkedIn</a>
@@ -62,7 +62,7 @@ The system is deterministic and fail-open: every session is reproducible, and le
 
 My coursework and school projects live on **[@lzc-nus](https://github.com/lzc-nus)**, while this account stays focused on personal and professional work.
 
-<table>
+<table width="100%" cellpadding="16" cellspacing="0">
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/lzc-nus/Plutus">Plutus ↗</a></h3>
