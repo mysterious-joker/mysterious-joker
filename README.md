@@ -16,8 +16,6 @@
 
 # I build the systems behind intelligent decisions.
 
-Search that retrieves the right evidence. Data infrastructure that stays governed and replayable. Agent workflows that connect both.
-
 I'm **Lim Zi Chao**, an NUS Computer Science undergraduate pursuing a second major in Mathematics, an **ASEAN Undergraduate Scholar**, and a **Data Engineer Intern at Theme International Trading**.
 
 <p>
@@ -60,7 +58,7 @@ These are public development-set results. Hardware, workload, and evaluation dis
 
 The system is deterministic and fail-open: every session is reproducible, and lexical retrieval remains available when dense assets cannot initialize. Runtime cost is **USD 0** because reset and response paths make no hosted-model or external API calls.
 
-[Read the source and technical documentation →](https://github.com/i-anything/TTSC) &nbsp;·&nbsp; [See team contributions →](https://github.com/i-anything/TTSC#team-contributions)
+[Read the source and technical documentation →](https://github.com/i-anything/TTSC)
 
 </details>
 
@@ -105,7 +103,7 @@ My coursework and school projects live on **[@lzc-nus](https://github.com/lzc-nu
 <summary><strong>Academic foundation and earlier experience</strong></summary>
 
 **National University of Singapore** · B.Comp. Computer Science, Second Major in Mathematics  
-2025–December 2028 expected · ASEAN Undergraduate Scholarship · graduating one semester early
+2025–December 2028 expected · ASEAN Undergraduate Scholarship
 
 Relevant coursework: Data Structures & Algorithms, Software Engineering, Database Systems, Computer Organization, Introduction to Data Science, Probability, Linear Algebra, and Calculus.
 
@@ -132,8 +130,6 @@ Automated batch document processing and output validation with PowerShell, impro
 | Application engineering | FastAPI, REST APIs, React / Next.js, Docker, Git, testing and debugging |
 
 </details>
-
-<p align="center"><strong>Available part-time 11 January–8 May 2027 · Full-time 9 May–31 July 2027</strong></p>
 
 <p align="center">
   <a href="mailto:zichao2006@gmail.com"><strong>Email me</strong></a>
