@@ -12,15 +12,9 @@
   <a href="https://www.linkedin.com/in/limzichao/"><strong>LinkedIn ↗</strong></a>
 </p>
 
-<br>
-
-# I build the systems behind intelligent decisions.
-
 I'm **Lim Zi Chao**, an NUS Computer Science undergraduate pursuing a second major in Mathematics, an **ASEAN Undergraduate Scholar**, and a **Data Engineer Intern at Theme International Trading**.
 
 <p>
-  <a href="mailto:zichao2006@gmail.com"><strong>Discuss a 2027 internship →</strong></a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="https://www.linkedin.com/in/limzichao/">Connect on LinkedIn</a>
 </p>
 
