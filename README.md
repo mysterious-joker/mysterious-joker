@@ -26,8 +26,6 @@ I'm **Lim Zi Chao**, an NUS Computer Science undergraduate pursuing a second maj
   <a href="https://www.linkedin.com/in/limzichao/">Connect on LinkedIn</a>
 </p>
 
-<img src="assets/proof-strip.svg" alt="Selected proof: 5th place at TikTok TechJam 2026; conversational search over 50,000 products; 44.43 millisecond p95 measured response latency; zero runtime network or API calls." width="100%" />
-
 <a id="selected-system"></a>
 
 ## Selected system
@@ -37,8 +35,6 @@ I'm **Lim Zi Chao**, an NUS Computer Science undergraduate pursuing a second maj
 **Team lead · 5th place · 72-hour build · Presented at TikTok Singapore**
 
 I led a five-person team and owned the hybrid retrieval architecture for a deterministic, CPU-only conversational search agent over 50,000 products. It asks focused questions, fuses lexical and semantic evidence, and returns ranked recommendations without runtime network access or paid APIs.
-
-<img src="assets/retrieval-system.svg" alt="Shopping Copilot architecture: natural-language conversation is reduced to constraints, routed through SQLite FTS5 BM25 and BGE-small ONNX dense retrieval, fused with reciprocal-rank fusion, reranked using structured evidence, and returned as recommendations with a clarifying question." width="100%" />
 
 <details>
 <summary><strong>Open the engineering case study</strong></summary>
@@ -95,8 +91,6 @@ My coursework and school projects live on **[@lzc-nus](https://github.com/lzc-nu
 
 ## Experience
 
-<img src="assets/experience-rail.svg" alt="Experience timeline: Data Engineer Intern at Bright Point Capital and Theme International Trading from July 2026 to present; NUS Computer Science and Mathematics from 2025 to expected December 2028; Student Associate at NUS Libraries from December 2025 to January 2026." width="100%" />
-
 <details>
 <summary><strong>What I build in data engineering</strong></summary>
 
@@ -126,8 +120,6 @@ Automated batch document processing and output validation with PowerShell, impro
 
 ## Toolkit
 
-<img src="assets/capability-map.svg" alt="Technical capability map: search and machine learning includes BM25, dense embeddings, vector search, rank fusion, reranking, and ONNX; data systems includes Python, SQL, ETL and ELT, API ingestion, validation, lineage, PostgreSQL, and Azure; product engineering includes TypeScript, Java, C++, FastAPI, React, Next.js, Docker, testing, and Git." width="100%" />
-
 <details>
 <summary><strong>Complete technical inventory</strong></summary>
 
@@ -140,10 +132,6 @@ Automated batch document processing and output validation with PowerShell, impro
 | Application engineering | FastAPI, REST APIs, React / Next.js, Docker, Git, testing and debugging |
 
 </details>
-
-<br>
-
-<img src="assets/closing-signal.svg" alt="Available for 2027 opportunities in AI, search, and data engineering." width="100%" />
 
 <p align="center"><strong>Available part-time 11 January–8 May 2027 · Full-time 9 May–31 July 2027</strong></p>
 

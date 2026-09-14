@@ -4,14 +4,12 @@ The profile is a technical portfolio dossier rendered entirely by GitHub. Recrui
 
 ## Visual system
 
-- Graphite `#111820` is the canvas for every authored visual; cobalt `#5D8CFF` and pale blue `#7EA5FF` identify active signals and system flow.
-- Off-white `#F4F7FB` carries primary type; blue-grey `#9DADBF` and `#A7B6C8` carry supporting text with sufficient contrast.
-- The hero is a photorealistic 3D exploded compute object. Subsequent sections translate that object into crisp vector systems: a proof rail, retrieval flow, experience timeline, capability map, and closing signal.
-- Arial/Helvetica in SVG assets stays close to GitHub's UI typography. Large labels use 700 weight; metadata uses letterspaced small caps only inside diagrams.
+- The hero uses graphite `#111820`, cobalt `#5D8CFF`, pale blue `#7EA5FF`, and off-white `#F4F7FB`.
+- The hero is a photorealistic 3D exploded compute object. It is the profile's only banner so project evidence remains quiet and readable in native GitHub typography.
 
 ## Composition
 
-The sequence is evidence-led: identity and recruiter action, proof rail, flagship system, NUS builds, experience, capability map, and availability close. Graphics alternate between dense proof and quiet readable Markdown. Project pairs use one GitHub-native table; secondary depth lives inside keyboard-accessible `<details>` controls.
+The sequence is evidence-led: identity and recruiter action, flagship system, NUS builds, experience, toolkit, and availability close. Project pairs use one GitHub-native table; secondary depth lives inside keyboard-accessible `<details>` controls.
 
 ## Constraints
 
