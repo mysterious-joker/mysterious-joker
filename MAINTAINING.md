@@ -1,6 +1,6 @@
 # Maintaining this GitHub profile
 
-The presentation lives in README.md and eight self-contained SVGs plus the original portfolio sculpture PNG and its provenance record in assets/. It is designed for GitHub Flavored Markdown; do not add external CSS, JavaScript, iframes, or live counters.
+The presentation lives in README.md and four self-contained header SVGs plus the original portfolio sculpture PNG and its provenance record in assets/. It is designed for GitHub Flavored Markdown; do not add external CSS, JavaScript, iframes, or live counters.
 
 ## Updating content
 
@@ -10,9 +10,9 @@ Private research projects, internal data, credentials, and the résumé PDF stay
 
 ## Regenerating artwork
 
-Use Python with fonttools and brotli installed, then run `python scripts/generate_assets.py`. Manrope source fonts and their SIL Open Font License are bundled under scripts/fonts/. SVG lettering is outlined so assets need no external font request. The banner embeds assets/portfolio-sculpture-chrome.png unchanged; it is the existing transparent sculpture render from the portfolio repository, with source URL and SHA-256 recorded in its adjacent .asset.json. The retrieval diagram is vector geometry. No external asset request or AI image generation is needed.
+Use Python with fonttools and brotli installed, then run `python scripts/generate_assets.py`. Manrope source fonts and their SIL Open Font License are bundled under scripts/fonts/. SVG lettering is outlined so assets need no external font request. The banner embeds assets/portfolio-sculpture-chrome.png unchanged; it is the existing transparent sculpture render from the portfolio repository, with source URL and SHA-256 recorded in its adjacent .asset.json. No external asset request or AI image generation is needed.
 
-Header and Copilot assets each have desktop/mobile and light/dark variants. Keep the banner at 1280 × 200 on desktop and 640 × 200 on mobile, with the name on one line. Keep the mobile sources before the desktop sources in picture markup. Verify at GitHub reading width and 390px viewport, in both themes. Core facts and links must remain usable without images.
+The header has desktop/mobile and light/dark variants. The background is transparent and its text shares the reading column’s left edge. Shopping Copilot’s architecture is selectable text; do not restore a separate diagram banner. Keep the banner at 1280 × 200 on desktop and 640 × 200 on mobile, with the name on one line. Keep the mobile sources before the desktop sources in picture markup. Verify at GitHub reading width and 390px viewport, in both themes. Core facts and links must remain usable without images.
 
 ## Preview and publishing
 

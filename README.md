@@ -1,6 +1,6 @@
 <!--
 THESIS: A compact portfolio signature followed immediately by inspectable engineering evidence.
-OWN-WORLD: A short charcoal or pale-stone banner, the original portfolio chrome sculpture, restrained outlined Manrope, and native GitHub prose.
+OWN-WORLD: A compact transparent banner aligned to the native reading column, the original portfolio chrome sculpture, restrained outlined Manrope, and native GitHub prose.
 STORY: Meet the engineer, inspect selected systems, understand experience, visit the portfolio or make contact.
 FIRST VIEWPORT: Full name stays on one line beside the portfolio sculpture. Banner height is about 100px on mobile and 130px at desktop reading width. Portfolio link and current role follow immediately.
 FORM: Computer-science monograph, candidate 7, seed e2c7aee5. User delegated direct design/build. No invented interaction; native disclosure reveals technical depth.
@@ -8,10 +8,10 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile-header-mobile-dark.svg?v=4">
-  <source media="(max-width: 600px)" srcset="assets/profile-header-mobile-light.svg?v=4">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-header-desktop-dark.svg?v=4">
-  <img src="assets/profile-header-desktop-light.svg?v=4" alt="Lim Zi Chao — Search, data and AI systems. Chrome sculpture from limzichao.com." width="100%">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile-header-mobile-dark.svg?v=5">
+  <source media="(max-width: 600px)" srcset="assets/profile-header-mobile-light.svg?v=5">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-header-desktop-dark.svg?v=5">
+  <img src="assets/profile-header-desktop-light.svg?v=5" alt="Lim Zi Chao — Search, data and AI systems. Chrome sculpture from limzichao.com." width="100%">
 </picture>
 
 <p>
@@ -38,12 +38,6 @@ I’m interested in the work between a promising idea and a dependable system: r
 
 50,000 products. At most ten conversational turns. An entirely CPU-based search agent, with no hosted models or runtime API calls.
 
-<picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/copilot-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/copilot-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/copilot-desktop-dark.svg">
-  <img src="assets/copilot-desktop-light.svg" alt="Hybrid retrieval: SQLite FTS5 BM25 lexical search and BGE-small INT8 ONNX semantic search converge through reciprocal-rank fusion." width="100%">
-</picture>
 
 I led a five-person team, designed and implemented the hybrid retrieval architecture, and presented the system at TikTok Singapore. Lexical and semantic search combine through reciprocal-rank fusion; route gating and structured-evidence reranking refine the results.
 
@@ -54,7 +48,8 @@ I led a five-person team, designed and implemented the hybrid retrieval architec
 <summary><strong>Engineering notes & evaluation context</strong></summary>
 
 - **My contribution:** retrieval architecture and implementation, coordination across retrieval, dialogue, evaluation, and preprocessing, and the final presentation.
-- **Design:** deterministic response paths, a frozen product catalog, and combined lexical/semantic evidence.
+- **Design:** deterministic response paths and a frozen product catalog.
+- **Retrieval:** SQLite FTS5 / BM25 lexical search and BGE-small INT8 ONNX semantic search combine through reciprocal-rank fusion, with route gating and structured-evidence reranking.
 - **Recorded public-evaluation result:** 1.000 Hit Rate@10 across 200 official public-evaluation sessions.
 - **Recorded response latency:** 44.43 ms p95 on the development machine.
 

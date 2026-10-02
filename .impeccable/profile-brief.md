@@ -17,3 +17,5 @@ Verify desktop light/dark, mobile light/dark, no overflow, mobile picture select
 Logo revision: the user explicitly rejected the complete abstract contour and requested a different logo. Replace that graphic with a custom filled LZC monogram, grouping L beside a stacked ZC. Preserve the existing palette, banner typography, and name order.
 
 Current binding banner direction: user rejected the monogram and requested the exact sculpture from the portfolio plus a substantially shorter banner. Full name on one line. Header viewBoxes 1280 × 200 and 640 × 200; dark charcoal and pale stone match the portfolio Chrome world. The sculpture PNG is copied unchanged with provenance. Earlier contour/monogram notes above are superseded for the header.
+
+Alignment revision: the user requested consistent alignment and removal of the Shopping Copilot architecture banner. The header is now transparent, first-glyph bearings are compensated so its text aligns with the native column, and all projects use native left-aligned text. Four obsolete diagram SVGs and their generator are removed; architecture stays in the engineering disclosure.

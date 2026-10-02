@@ -16,6 +16,7 @@ A GitHub-native profile README that makes Zi Chao’s engineering direction, cur
 
 ## Capabilities and Constraints
 
+- Use a consistent left-aligned reading column; the Shopping Copilot architecture explanation must be text without an additional banner.
 - Banner direction explicitly specified by the user: reuse the original chrome sculpture from the portfolio, keep the banner compact, and display the full name on one line.
 
 - Zi Chao is the given name; Lim is the surname. The user is Malaysian Chinese. Keep the full given name together and preserve the display order Lim Zi Chao.
