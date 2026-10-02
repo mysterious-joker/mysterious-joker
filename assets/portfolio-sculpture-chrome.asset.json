@@ -1,0 +1,8 @@
+{
+  "kind": "existing-project-asset",
+  "role": "Portfolio sculpture in compact GitHub banner",
+  "source": "https://github.com/mysterious-joker/portfolio/blob/main/public/images/projects/portfolio-sculpture-chrome.png",
+  "sha256": "2aa86156d2c02a5387e03e070e3b5bdbaaa9d4b781f14020ca028a92b0ce22c6",
+  "production": "Original procedural Three.js sculpture from the portfolio. Existing transparent PNG copied unchanged; no AI image generation or image editing.",
+  "usage": "Embedded unchanged in the four self-contained banner SVGs."
+}

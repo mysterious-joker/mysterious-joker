@@ -15,3 +15,5 @@ Media inventory: four header SVGs (desktop/mobile x light/dark), four retrieval-
 Verify desktop light/dark, mobile light/dark, no overflow, mobile picture selection, source links and disclosure behavior. Full GitHub Markdown rendering is the source of truth; local preview mirrors the reading column rather than inventing a website.
 
 Logo revision: the user explicitly rejected the complete abstract contour and requested a different logo. Replace that graphic with a custom filled LZC monogram, grouping L beside a stacked ZC. Preserve the existing palette, banner typography, and name order.
+
+Current binding banner direction: user rejected the monogram and requested the exact sculpture from the portfolio plus a substantially shorter banner. Full name on one line. Header viewBoxes 1280 × 200 and 640 × 200; dark charcoal and pale stone match the portfolio Chrome world. The sculpture PNG is copied unchanged with provenance. Earlier contour/monogram notes above are superseded for the header.

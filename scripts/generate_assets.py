@@ -1,10 +1,12 @@
 """Generate self-contained profile artwork. Requires fonttools and brotli.
 
-Geometry is original, deterministic vector work; no third-party image service.
+The banner embeds the existing portfolio sculpture PNG unchanged.
+The retrieval diagram is deterministic vector work; no third-party image service.
 Display text is outlined from the bundled, OFL-licensed Manrope fonts.
 """
 from pathlib import Path
 from html import escape
+import base64
 from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
 
@@ -29,25 +31,21 @@ def text(value, x, y, size, color, weight=600, tracking=0):
     return f'<g fill="{color}" aria-label="{escape(value)}">' + ''.join(out) + '</g>'
 
 def svg(width, height, title, desc, content, background):
+    provenance = ("Typography: Manrope, SIL OFL. Banner raster provenance: assets/portfolio-sculpture-chrome.asset.json."
+                  if 'data-artwork="portfolio-sculpture"' in content else
+                  "Original mathematical vector artwork. Typography: Manrope, SIL OFL.")
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
 <title id="title">{escape(title)}</title><desc id="desc">{escape(desc)}</desc>
-<!-- Original mathematical vector artwork. Typography: Manrope, SIL OFL. Regenerate with scripts/generate_assets.py. -->
+<!-- {provenance} Regenerate with scripts/generate_assets.py. -->
 <rect width="{width}" height="{height}" fill="{background}"/>
 {content}
 </svg>"""
 
-def monogram(left, top, size, color):
-    # L is the family initial; Z and C stay grouped as the given-name initials.
-    # A shared 32-unit module ties the straight L/Z to the rounded, open C.
-    paths = [
-        'M16 16H48V272H80V304H16Z',
-        'M88 16H304V48L148 112H304V144H88V112L244 48H88Z',
-        'M304 176H152C116.65 176 88 204.65 88 240C88 275.35 116.65 304 152 304H304V272H152C134.33 272 120 257.67 120 240C120 222.33 134.33 208 152 208H304Z',
-    ]
-    return (f'<g data-artwork="lzc-monogram" fill="{color}" '
-            f'transform="translate({left} {top}) scale({size / 320:.6f})" '
-            'aria-label="LZC: Lim Zi Chao">' +
-            ''.join(f'<path d="{path}"/>' for path in paths) + '</g>')
+SCULPTURE = base64.b64encode((ASSETS / 'portfolio-sculpture-chrome.png').read_bytes()).decode('ascii')
+
+def sculpture(x, y, size):
+    return (f'<image data-artwork="portfolio-sculpture" x="{x}" y="{y}" '
+            f'width="{size}" height="{size}" href="data:image/png;base64,{SCULPTURE}"/>')
 
 for theme in ('light', 'dark'):
     dark = theme == 'dark'
@@ -55,21 +53,22 @@ for theme in ('light', 'dark'):
     ink = '#F0F5F2' if dark else '#102C35'
     muted = '#BCD2D5' if dark else '#405E66'
     accent = '#FF865F' if dark else '#CD3A19'
+    header_ground = '#121212' if dark else '#EEEDE9'
+    header_ink = '#F1F0EC' if dark else '#191919'
+    header_muted = '#C2C0BA' if dark else '#52514D'
     for mobile in (False, True):
         if mobile:
-            width, height = 640, 780
-            parts = [text('LIM', 36, 112, 99, ink, 800, -3), text('ZI CHAO', 35, 224, 112, ink, 800, -3)]
-            parts += [text('Making information useful.', 39, 280, 26, ink)]
-            parts += [monogram(140, 322, 360, accent)]
-            parts += [f'<path d="M40 698H600" stroke="{ink}" opacity=".28"/>', text('SEARCH / DATA / AI SYSTEMS', 40, 738, 22, ink)]
+            width, height = 640, 200
+            parts = [text('Lim Zi Chao', 32, 90, 52, header_ink, 800, -1)]
+            parts += [text('Search, data & AI systems.', 34, 132, 24, header_muted)]
+            parts += [sculpture(398, -12, 224)]
         else:
-            width, height = 1280, 500
-            parts = [text('LIM', 46, 173, 162, ink, 800, -5), text('ZI CHAO', 49, 335, 160, ink, 800, -5)]
-            parts += [text('Making information useful.', 54, 402, 28, ink)]
-            parts += [monogram(810, 48, 356, accent)]
-            parts += [f'<path d="M54 440H1226" stroke="{ink}" opacity=".28"/>', text('SEARCH / DATA / AI SYSTEMS', 54, 478, 21, ink), text('NUS / SINGAPORE', 995, 478, 18, muted)]
+            width, height = 1280, 200
+            parts = [text('Lim Zi Chao', 44, 96, 64, header_ink, 800, -1.3)]
+            parts += [text('Search, data & AI systems.', 47, 141, 27, header_muted)]
+            parts += [sculpture(988, -20, 240)]
         name = f'profile-header-{"mobile" if mobile else "desktop"}-{theme}.svg'
-        (ASSETS / name).write_text(svg(width,height,'Lim Zi Chao — Making information useful.','Search, data, and AI systems. An original geometric LZC monogram groups the surname initial L with the given-name initials ZC.', ''.join(parts), ground))
+        (ASSETS / name).write_text(svg(width, height, 'Lim Zi Chao — Search, data and AI systems.', 'A compact identity banner using the original chrome sculpture from limzichao.com. The full name stays together on one line.', ''.join(parts), header_ground))
 
     # A literal retrieval diagram, not an illustrative performance chart.
     for mobile in (False, True):

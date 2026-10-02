@@ -1,17 +1,17 @@
 <!--
-THESIS: An engineering monograph: distinctive authorship with evidence readers can inspect.
-OWN-WORLD: Glacier and deep petroleum, a burnt-orange LZC monogram, oversized outlined Manrope, native GitHub prose.
+THESIS: A compact portfolio signature followed immediately by inspectable engineering evidence.
+OWN-WORLD: A short charcoal or pale-stone banner, the original portfolio chrome sculpture, restrained outlined Manrope, and native GitHub prose.
 STORY: Meet the engineer, inspect selected systems, understand experience, visit the portfolio or make contact.
-FIRST VIEWPORT: Two-line name owns the left half; an original geometric LZC monogram occupies the right. Mobile recomposes vertically. Portfolio link and current role sit immediately below.
+FIRST VIEWPORT: Full name stays on one line beside the portfolio sculpture. Banner height is about 100px on mobile and 130px at desktop reading width. Portfolio link and current role follow immediately.
 FORM: Computer-science monograph, candidate 7, seed e2c7aee5. User delegated direct design/build. No invented interaction; native disclosure reveals technical depth.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile-header-mobile-dark.svg?v=3">
-  <source media="(max-width: 600px)" srcset="assets/profile-header-mobile-light.svg?v=3">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-header-desktop-dark.svg?v=3">
-  <img src="assets/profile-header-desktop-light.svg?v=3" alt="Lim Zi Chao — Making information useful. Original LZC monogram. Search, data, and AI systems. NUS, Singapore." width="100%">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile-header-mobile-dark.svg?v=4">
+  <source media="(max-width: 600px)" srcset="assets/profile-header-mobile-light.svg?v=4">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-header-desktop-dark.svg?v=4">
+  <img src="assets/profile-header-desktop-light.svg?v=4" alt="Lim Zi Chao — Search, data and AI systems. Chrome sculpture from limzichao.com." width="100%">
 </picture>
 
 <p>
