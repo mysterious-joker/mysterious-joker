@@ -7,12 +7,11 @@ FORM: Computer-science monograph, candidate 7, seed e2c7aee5. User delegated dir
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->
 
-<picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile-header-mobile-dark.svg?v=5">
-  <source media="(max-width: 600px)" srcset="assets/profile-header-mobile-light.svg?v=5">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-header-desktop-dark.svg?v=5">
-  <img src="assets/profile-header-desktop-light.svg?v=5" alt="Lim Zi Chao — Search, data and AI systems. Chrome sculpture from limzichao.com." width="100%">
-</picture>
+**I'm Zi Chao. I build search, data infrastructure, and AI systems.**
+
+Year 2 Computer Science at the **National University of Singapore**, with a second major in Mathematics and the **ASEAN Undergraduate Scholarship**. Currently a **Data Engineer Intern at Theme International Trading** in Singapore.
+
+I’m interested in the work between a promising idea and a dependable system: retrieval, data quality, explicit contracts, and the details that survive real use.
 
 <p>
   <a href="https://limzichao.com"><strong>Explore my portfolio</strong></a>
@@ -24,13 +23,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <a href="https://github.com/lzc-nus">NUS work</a>
 </p>
 
-**I'm Zi Chao. I build search, data infrastructure, and AI systems.**
-
-Year 2 Computer Science at the **National University of Singapore**, with a second major in Mathematics and the **ASEAN Undergraduate Scholarship**. Currently a **Data Engineer Intern at Theme International Trading** in Singapore.
-
-I’m interested in the work between a promising idea and a dependable system: retrieval, data quality, explicit contracts, and the details that survive real use.
-
-## Selected work
+## Selected Projects
 
 ### [Shopping Copilot](https://github.com/mysterious-joker/TTSC)
 
@@ -84,7 +77,7 @@ A JavaFX application for todos, deadlines, and events, with persistent storage, 
 My interactive portfolio: two visual worlds, procedural Three.js scenes, scroll choreography, and accessible project case studies.
 
 **React · TypeScript · Three.js · GSAP**<br>
-[Enter the portfolio](https://limzichao.com) · [Source](https://github.com/mysterious-joker/portfolio)
+[Enter the portfolio](https://limzichao.com)
 
 ## Behind the systems
 
@@ -151,7 +144,7 @@ Coursework includes Data Structures & Algorithms, Software Engineering, Database
 <details>
 <summary><strong>Early experiments, still online</strong></summary>
 
-Back when I still coded by hand 🥲 Learning the basics. Blaming the compiler.
+Back when I still coded by hand 🥲
 
 - [Peacock](https://peacock.limzichao.com/) — make a meme.
 - [Viridian](https://viridian.limzichao.com/) — turn painting clues into art.
