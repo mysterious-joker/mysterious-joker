@@ -1,0 +1,5 @@
+.DS_Store
+.impeccable/review/
+output/
+__pycache__/
+.playwright-cli/

@@ -1,129 +1,184 @@
-<img src="https://raw.githubusercontent.com/mysterious-joker/mysterious-joker/main/assets/profile-header.png?v=1" alt="Lim Zi Chao — AI, Software and Data Engineering. NUS Computer Science and Mathematics. ASEAN Undergraduate Scholar." width="100%" />
+<!--
+THESIS: An engineering monograph: distinctive authorship with evidence readers can inspect.
+OWN-WORLD: Glacier and deep petroleum, burnt-orange plotter contours, oversized outlined Manrope, native GitHub prose.
+STORY: Meet the engineer, inspect selected systems, understand experience, visit the portfolio or make contact.
+FIRST VIEWPORT: Two-line name owns the left half; dense mathematical contours occupy the right. Mobile recomposes vertically. Portfolio link and current role sit immediately below.
+FORM: Computer-science monograph, candidate 7, seed e2c7aee5. User delegated direct design/build. No invented interaction; native disclosure reveals technical depth.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
 
-<p align="center">
-  <a href="#selected-system"><strong>Selected Projects</strong></a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="#experience"><strong>Experience</strong></a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="#toolkit"><strong>Toolkit</strong></a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://github.com/lzc-nus"><strong>NUS work ↗</strong></a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/limzichao/"><strong>LinkedIn ↗</strong></a>
-</p>
-
-I'm **Lim Zi Chao**, an NUS Computer Science undergraduate pursuing a second major in Mathematics, an **ASEAN Undergraduate Scholar**, and a **Data Engineer Intern at Theme International Trading**.
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile-header-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/profile-header-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-header-desktop-dark.svg">
+  <img src="assets/profile-header-desktop-light.svg" alt="Lim Zi Chao — Making information useful. Search, data, and AI systems. NUS, Singapore." width="100%">
+</picture>
 
 <p>
-  <a href="https://www.linkedin.com/in/limzichao/">Connect on LinkedIn</a>
+  <a href="https://limzichao.com"><strong>Explore my portfolio</strong></a>
+  &nbsp;&nbsp; / &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/limzichao/">LinkedIn</a>
+  &nbsp;&nbsp; / &nbsp;&nbsp;
+  <a href="mailto:zichao2006@gmail.com">Email</a>
+  &nbsp;&nbsp; / &nbsp;&nbsp;
+  <a href="https://github.com/lzc-nus">NUS work</a>
 </p>
 
-<a id="selected-system"></a>
+**I'm Zi Chao. I build search, data infrastructure, and AI systems.**
 
-## Selected Personal Projects
+Year 2 Computer Science at the **National University of Singapore**, with a second major in Mathematics and the **ASEAN Undergraduate Scholarship**. Currently a **Data Engineer Intern at Theme International Trading** in Singapore.
 
-### [Shopping Copilot — TikTok TechJam 2026](https://github.com/i-anything/TTSC)
+I’m interested in the work between a promising idea and a dependable system: retrieval, data quality, explicit contracts, and the details that survive real use.
 
-**Team lead · 5th place · Presented at TikTok Singapore**
+## Selected work
 
-I led a five-person team and owned the hybrid retrieval architecture for a deterministic, CPU-only conversational search agent over 50,000 products. It asks focused questions, fuses lexical and semantic evidence, and returns ranked recommendations without runtime network access or paid APIs.
+### [Shopping Copilot](https://github.com/mysterious-joker/TTSC)
+
+**5th place · TikTok TechJam 2026 · Team lead**
+
+50,000 products. At most ten conversational turns. An entirely CPU-based search agent, with no hosted models or runtime API calls.
+
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/copilot-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/copilot-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/copilot-desktop-dark.svg">
+  <img src="assets/copilot-desktop-light.svg" alt="Hybrid retrieval: SQLite FTS5 BM25 lexical search and BGE-small INT8 ONNX semantic search converge through reciprocal-rank fusion." width="100%">
+</picture>
+
+I led a five-person team, designed and implemented the hybrid retrieval architecture, and presented the system at TikTok Singapore. Lexical and semantic search combine through reciprocal-rank fusion; route gating and structured-evidence reranking refine the results.
+
+**Python · SQL · SQLite FTS5 · ONNX Runtime**<br>
+[Source & technical documentation](https://github.com/mysterious-joker/TTSC)
 
 <details>
-<summary><strong>Open the engineering case study</strong></summary>
+<summary><strong>Engineering notes & evaluation context</strong></summary>
 
-#### What I owned
+- **My contribution:** retrieval architecture and implementation, coordination across retrieval, dialogue, evaluation, and preprocessing, and the final presentation.
+- **Design:** deterministic response paths, a frozen product catalog, and combined lexical/semantic evidence.
+- **Recorded public-evaluation result:** 1.000 Hit Rate@10 across 200 official public-evaluation sessions.
+- **Recorded response latency:** 44.43 ms p95 on the development machine.
 
-- Designed and implemented the retrieval architecture: BM25, dense embeddings, reciprocal-rank fusion, route gating, and exact structured-evidence reranking.
-- Coordinated retrieval, dialogue, evaluation, and preprocessing across the five-person team.
-- Presented the final system at TikTok Singapore.
+These are development-set results recorded in the original profile, not production guarantees. Hardware, workload, and evaluation distribution affect performance. The team implementation began from a competition-kit fork.
 
-#### Public evaluation
-
-| Metric | Result | Context |
-| :--- | ---: | :--- |
-| Hit Rate@10 | **1.000** | 200 official public-evaluation sessions |
-| MRR | **1.000** | 200 official public-evaluation sessions |
-| TechnicalScore | **0.9805** | Official public evaluator |
-| Response latency | **44.43 ms p95** | Measured development machine |
-
-These are public development-set results. Hardware, workload, and evaluation distribution affect performance.
-
-#### Why the design matters
-
-The system is deterministic and fail-open: every session is reproducible, and lexical retrieval remains available when dense assets cannot initialize. Runtime cost is **USD 0** because reset and response paths make no hosted-model or external API calls.
-
-[Read the source and technical documentation →](https://github.com/i-anything/TTSC)
+[Team contributions](https://github.com/mysterious-joker/TTSC#team-contributions)
 
 </details>
 
-<br>
+### [Plutus](https://github.com/lzc-nus/Plutus)
 
-## Selected NUS Projects
+**Financial software · NUS Orbital, Apollo level**
 
-My coursework and school projects live on **[@lzc-nus](https://github.com/lzc-nus)**, while this account stays focused on personal and professional work.
+A deployed financial workspace connecting assets, liabilities, cash flow, and planning. Protected user-data APIs, validated transaction workflows, and typed frontend/backend contracts support the experience.
 
-<table width="100%" cellpadding="18" cellspacing="0">
-  <tr>
-    <td width="50%" valign="top">
-      <strong><a href="https://github.com/lzc-nus/Plutus">Plutus ↗</a></strong>
-      <p><strong>NUS Orbital · Deployed full-stack platform</strong></p>
-      <p>A financial platform with protected user-data APIs, validated transaction workflows, and typed frontend/backend contracts.</p>
-      <div><code>Next.js</code> <code>TypeScript</code> <code>FastAPI</code> <code>PostgreSQL</code> <code>Docker</code></div>
-    </td>
-    <td width="50%" valign="top">
-      <strong><a href="https://github.com/lzc-nus/ip">Green Chonk ↗</a></strong>
-      <p><strong>NUS Software Engineering · JavaFX</strong></p>
-      <p>A persistent task companion with date-aware scheduling, resilient command parsing, a CLI fallback, and regression tests.</p>
-      <div><code>Java</code> <code>JavaFX</code> <code>Gradle</code> <code>JUnit</code></div>
-    </td>
-  </tr>
-</table>
+**Next.js · TypeScript · FastAPI · PostgreSQL · Docker**<br>
+[Explore the source](https://github.com/lzc-nus/Plutus)
 
-<a id="experience"></a>
+### [Green Chonk](https://github.com/lzc-nus/ip)
 
-## Experience
+**A task companion, built to remember**
+
+A JavaFX application for todos, deadlines, and events, with persistent storage, date-aware scheduling, a command-line fallback, and regression tests. Developed from the NUS Software Engineering course starter.
+
+**Java · JavaFX · Gradle · JUnit**<br>
+[Explore the source](https://github.com/lzc-nus/ip) · [User guide](https://lzc-nus.github.io/ip/)
+
+### [Ideas in Motion](https://limzichao.com)
+
+**This work, in another dimension**
+
+My interactive portfolio: two visual worlds, procedural Three.js scenes, scroll choreography, and accessible project case studies.
+
+**React · TypeScript · Three.js · GSAP**<br>
+[Enter the portfolio](https://limzichao.com) · [Source](https://github.com/mysterious-joker/portfolio)
+
+## Behind the systems
+
+**Data Engineer Intern — Theme International Trading**<br>
+July 2026–present · Singapore
+
+I work on Python/SQL infrastructure connecting market information and governed PostgreSQL datasets to analyst and AI-agent workflows.
+
+- **Data pipelines:** architected a two-stage, Kimball-inspired ETLTL pipeline for S&P Global Commodity Insights (Platts) reports, from blob storage and APIs through staging, canonical integration, and publication.
+- **Governed datasets:** designed source-aligned PostgreSQL staging with validation, lineage, replayability, and controlled publication for analysts and an internal MCP platform.
+- **Market data:** retrieved vendor data through APIs and backfilled missing FactSet records into Azure-hosted PostgreSQL.
+- **Ongoing exploration:** retrieval and RAG, image embeddings, persistent agent memory, MCP tool interfaces, and factor screening with information coefficient analysis.
 
 <details>
-<summary><strong>What I build as a data engineer intern at quantitative trading firm</strong></summary>
+<summary><strong>Earlier experience</strong></summary>
 
-- Engineer Python and SQL infrastructure connecting market information and governed PostgreSQL datasets to analyst and AI-agent workflows.
-- Architected a source-to-canonical commodity-data pipeline spanning API and blob ingestion, transformation, staging, validation, lineage, replayability, and controlled publication.
-- Built vendor API ingestion workflows and backfilled missing market data into Azure-hosted PostgreSQL.
-- Prototyped semantic chunking, embeddings, vector retrieval, RAG, persistent agent memory, and MCP tool interfaces for governed knowledge sources.
+**Student Associate — NUS Libraries**<br>
+December 2025–January 2026 · Singapore
+
+Supported archival digitisation and cataloguing, including scanning, labelling, organising, and validating document records. Collaborated on a PowerShell automation workflow for batch renaming, output standardisation, and category-based organisation, then checked the outputs for consistency.
+
+**Teacher — SJK(C) Poay Chai**<br>
+May–July 2025 · Iskandar Puteri
+
+Taught mathematics, languages, arts, and physical education, adapting lessons to different learning speeds. Developed clear explanations of abstract concepts while managing classroom activities and student engagement.
+
+**Data Entry Officer, KYC Project — VentureHaven**<br>
+February–March 2025 · Johor Bahru
+
+Entered and validated client records across internal systems and spreadsheets. Reviewed compliance documents, organised records for traceability, and coordinated with clients and colleagues to resolve missing information.
+
+**Boarding Assistant — Raffles American School**<br>
+January–February 2025 · Iskandar Puteri
+
+Supported students, parents, and staff in a multicultural environment, including translation and guidance. Coordinated schedules and activities, resolved routine student issues, and escalated concerns when needed.
 
 </details>
 
 <details>
-<summary><strong>Academic foundation and earlier experience</strong></summary>
+<summary><strong>Academic foundation</strong></summary>
 
-- **National University of Singapore** — B.Comp. Computer Science with a Second Major in Mathematics, expected December 2028; ASEAN Undergraduate Scholar.
-- **Relevant coursework** — Data Structures & Algorithms, Software Engineering, Database Systems, Computer Organization, Introduction to Data Science, Probability, Linear Algebra, and Calculus.
-- **Student Associate, NUS Libraries** — Automated batch document processing and output validation with PowerShell, improving naming, organization, and record consistency (December 2025–January 2026).
-- **Languages** — English and Chinese (native/bilingual); Malay (conversational).
+**NUS · B.Comp. Computer Science + Second Major in Mathematics**<br>
+2025–December 2028 (expected) · ASEAN Undergraduate Scholarship
+
+Coursework includes Data Structures & Algorithms, Software Engineering, Database Systems, Computer Organization, Data Science, Probability, Linear Algebra, and Calculus.
+
+**Languages:** English and Chinese (native/bilingual); Malay (conversational).
 
 </details>
 
-<a id="toolkit"></a>
-
-## Toolkit
-
 <details>
-<summary><strong>Complete technical inventory</strong></summary>
+<summary><strong>Tools I reach for</strong></summary>
 
-| Focus | Tools & methods |
+| Work | Tools & methods |
 | :--- | :--- |
 | Programming | Python, SQL, Java, C++, TypeScript / JavaScript |
-| Search & ML | Pandas, NumPy, BM25, dense embeddings, vector search, reciprocal-rank fusion, ranking and reranking, ONNX Runtime, evaluation metrics |
-| AI systems | AI agents, MCP, RAG, semantic chunking, persistent memory |
-| Data engineering | ETL / ELT, API ingestion, preprocessing, validation, lineage, replayability, PostgreSQL, Azure |
-| Application engineering | FastAPI, REST APIs, React / Next.js, Docker, Git, testing and debugging |
+| Retrieval | BM25, dense embeddings, vector search, rank fusion, reranking, ONNX Runtime |
+| Data | ETL / ELT, API ingestion, validation, lineage, replayability, PostgreSQL, Azure, Pandas, NumPy |
+| AI systems | Agents, MCP, RAG, semantic chunking, persistent memory |
+| Applications | FastAPI, REST APIs, React / Next.js, Docker, Git, testing & debugging |
 
 </details>
 
-<p align="center">
-  <a href="mailto:zichao2006@gmail.com"><strong>Email me</strong></a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/limzichao/"><strong>LinkedIn</strong></a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://github.com/lzc-nus"><strong>NUS GitHub</strong></a>
-</p>
+<details>
+<summary><strong>Early experiments, still online</strong></summary>
+
+Back when I still coded by hand 🥲 Learning the basics. Blaming the compiler.
+
+- [Peacock](https://peacock.limzichao.com/) — make a meme.
+- [Viridian](https://viridian.limzichao.com/) — turn painting clues into art.
+- [Rose](https://rose.limzichao.com/) — explore stock reports.
+- [Chef Hachi](https://hachi.limzichao.com/) — cook with what you have.
+
+</details>
+
+## Have something worth building?
+
+I’m happy to talk about search, data, AI, and collaborations that connect them.
+
+**[Get in touch](mailto:zichao2006@gmail.com)** · [LinkedIn](https://www.linkedin.com/in/limzichao/) · [Portfolio](https://limzichao.com)
+
+<details>
+<summary><strong>2027 internship availability</strong></summary>
+
+- **11 January–8 May 2027:** part-time, at least three days per week.
+- **9 May–31 July 2027:** full-time.
+
+</details>
+
+---
+
+Personal & professional projects here. Coursework and school projects at **[@lzc-nus](https://github.com/lzc-nus)**.

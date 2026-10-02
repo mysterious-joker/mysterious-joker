@@ -1,9 +1,21 @@
 # Maintaining this GitHub profile
 
-The entire presentation lives in README.md and assets/profile-header.png and renders directly on the GitHub profile. GitHub-native details/summary sections provide expandable technical and career information. No external portfolio is required or linked.
+The presentation lives in README.md and eight self-contained SVGs in assets/. It is designed for GitHub Flavored Markdown; do not add external CSS, JavaScript, iframes, or live counters.
 
-Update README.md for project, employment, education, or availability changes. The résumé supplied on 2026-09-14 is the source for biographical claims and TechJam leadership/placement. Public project READMEs provide additional project context. LinkedIn could not be read because it required sign-in, so its URL is a contact link only. Keep private research projects out of the public profile unless the user explicitly reverses this decision.
+## Updating content
 
-Keep development-set metrics clearly scoped. Do not conflate team results with individual work. Do not publish private source, internal datasets, credentials, or the résumé PDF without a specific request. The public contact email is used with the user's résumé-based self-promotion request; the phone number is not published.
+Edit README.md for factual changes. The user confirmed Year 2 at NUS, a current data engineering internship, and using the employer name Theme International Trading. The original profile and résumé-derived material are the source of employment dates, availability, academic history, and TechJam leadership/placement. Public project repositories supply architecture and product context. Keep development-set metrics scoped and team achievements distinct from individual contributions.
 
-The banner is an AI-generated 3D illustration with typography, not a live canvas. Changing the banner requires replacing the PNG and checking legibility at GitHub profile width. Assets are self-hosted in this repository.
+Private research projects, internal data, credentials, and the résumé PDF stay unpublished. Contact links use the existing public email and LinkedIn. Personal work belongs to mysterious-joker; school projects belong to lzc-nus.
+
+## Regenerating artwork
+
+Use Python with fonttools and brotli installed, then run `python scripts/generate_assets.py`. Manrope source fonts and their SIL Open Font License are bundled under scripts/fonts/. SVG lettering is outlined so assets need no external font request. All artwork is authored vector geometry; there are no third-party image services or generated photographs.
+
+Header and Copilot assets each have desktop/mobile and light/dark variants. Keep the mobile sources before the desktop sources in picture markup. Verify at GitHub reading width and 390px viewport, in both themes. Core facts and links must remain usable without images.
+
+## Preview and publishing
+
+The local design repository has a separate history from the live profile at github.com/mysterious-joker/mysterious-joker. Publish approved updates from a fresh checkout of the live repository, copying the README, artwork, generator, licensed fonts, and documentation into that checkout. Commit on top of its current main branch and push normally. Preserve both histories; never force-push to connect them.
+
+`scripts/preview.py` renders a local reading-column preview for visual inspection; it is not a deployable replacement for the README. Review screenshots and generated preview files are ignored by Git.
