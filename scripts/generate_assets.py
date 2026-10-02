@@ -37,19 +37,39 @@ def svg(width, height, title, desc, content, background):
 {content}
 </svg>"""
 
-def field(cx, cy, factor, color):
-    # Nested parametric contours: a controlled, two-dimensional plotter field.
+def field(left, top, width, height, color):
+    # Closed, smoothly rounded contours share one silhouette and a clear aperture.
+    # Fit the complete Bezier control hull to a reserved artwork box: no cropping.
+    count = 64
+    points = []
+    for j in range(count):
+        t = 2 * math.pi * j / count
+        radius = 1 + .16 * math.cos(3 * t + .45) + .04 * math.sin(t)
+        angle = t - math.pi / 10
+        points.append((radius * math.cos(angle), radius * math.sin(angle)))
+    segments = []
+    for j in range(count):
+        previous, start, end, following = [points[k % count] for k in (j - 1, j, j + 1, j + 2)]
+        control_a = tuple(start[k] + (end[k] - previous[k]) / 6 for k in (0, 1))
+        control_b = tuple(end[k] - (following[k] - start[k]) / 6 for k in (0, 1))
+        segments.append((control_a, control_b, end))
+    hull = points + [p for segment in segments for p in segment]
+    min_x, max_x = min(p[0] for p in hull), max(p[0] for p in hull)
+    min_y, max_y = min(p[1] for p in hull), max(p[1] for p in hull)
+    center_x, center_y = (min_x + max_x) / 2, (min_y + max_y) / 2
+    def position(point, scale):
+        return (left + width / 2 + (point[0] - center_x) * scale * width / (max_x - min_x),
+                top + height / 2 + (point[1] - center_y) * scale * height / (max_y - min_y))
     paths = []
-    for i in range(42):
-        r = 54 + i * 4.6
-        points = []
-        for j in range(181):
-            t = 2 * math.pi * j / 180
-            x = cx + factor * (r * math.cos(t) + 35 * math.sin(t * 2))
-            y = cy + factor * (r * .73 * math.sin(t) + 21 * math.cos(t * 3))
-            points.append(f'{x:.2f},{y:.2f}')
-        paths.append(f'<path d="M {" L ".join(points)} Z"/>')
-    return f'<g fill="none" stroke="{color}" stroke-width="1.7">' + ''.join(paths) + '</g>'
+    for i in range(34):
+        scale = .30 + .70 * i / 33
+        x, y = position(points[0], scale)
+        commands = [f'M {x:.2f},{y:.2f}']
+        for segment in segments:
+            coordinates = ' '.join(f'{x:.2f},{y:.2f}' for x, y in (position(point, scale) for point in segment))
+            commands.append(f'C {coordinates}')
+        paths.append(f'<path d="{" ".join(commands)} Z"/>')
+    return f'<g data-artwork="contour-mark" fill="none" stroke="{color}" stroke-width="2" stroke-linejoin="round">' + ''.join(paths) + '</g>'
 
 for theme in ('light', 'dark'):
     dark = theme == 'dark'
@@ -62,13 +82,13 @@ for theme in ('light', 'dark'):
             width, height = 640, 780
             parts = [text('LIM', 36, 112, 99, ink, 800, -3), text('ZI CHAO', 35, 224, 112, ink, 800, -3)]
             parts += [text('Making information useful.', 39, 280, 26, ink)]
-            parts += [field(330, 496, 0.96, accent)]
+            parts += [field(89, 330, 462, 324, accent)]
             parts += [f'<path d="M40 698H600" stroke="{ink}" opacity=".28"/>', text('SEARCH / DATA / AI SYSTEMS', 40, 738, 22, ink)]
         else:
             width, height = 1280, 500
             parts = [text('LIM', 46, 173, 162, ink, 800, -5), text('ZI CHAO', 49, 335, 160, ink, 800, -5)]
             parts += [text('Making information useful.', 54, 402, 28, ink)]
-            parts += [field(1030, 228, 1.14, accent)]
+            parts += [field(768, 48, 426, 356, accent)]
             parts += [f'<path d="M54 440H1226" stroke="{ink}" opacity=".28"/>', text('SEARCH / DATA / AI SYSTEMS', 54, 478, 21, ink), text('NUS / SINGAPORE', 995, 478, 18, muted)]
         name = f'profile-header-{"mobile" if mobile else "desktop"}-{theme}.svg'
         (ASSETS / name).write_text(svg(width,height,'Lim Zi Chao — Making information useful.','Search, data, and AI systems. Original nested mathematical contours accompany the typography.', ''.join(parts), ground))

@@ -91,13 +91,13 @@ The desktop header balances the name against the contour field; mobile stacks na
 
 ## Elevation & Depth
 
-All art is flat. Forty-two nested parametric contours make a dense plotter field through line spacing and overlap. They are original two-dimensional geometry, not a measured performance graph. Thin rules separate contextual information. The retrieval illustration uses literal connector geometry and a solid fusion block. There are no custom hover elevations or animations.
+All art is flat. Thirty-four smooth, closed Bézier contours share a rounded triangular silhouette and central aperture. Their complete control hull fits within a reserved artwork box, preserving clear space on every side. They are original two-dimensional geometry, not a measured performance graph. Thin rules separate contextual information. The retrieval illustration uses literal connector geometry and a solid fusion block. There are no custom hover elevations or animations.
 
 **The Flat Geometry Rule.** Use line density, contrast, and negative space for structure; the artwork has no shadows, gradients, or simulated 3D material.
 
 ## Shapes
 
-Artwork bounds and fusion blocks are square rectangles. The header's fluid closed contours contrast with the diagram's orthogonal branching connectors. The field uses a 1.7-unit stroke; diagram connectors use 3-unit strokes in SVG coordinates. Directional arrowheads in the technical diagram are drawn paths that explain data flow. They are distinct from the removed outbound-link glyphs.
+Artwork bounds and fusion blocks are square rectangles. The header's fluid closed contours contrast with the diagram's orthogonal branching connectors. The field uses a 2-unit stroke; diagram connectors use 3-unit strokes in SVG coordinates. Directional arrowheads in the technical diagram are drawn paths that explain data flow. They are distinct from the removed outbound-link glyphs.
 
 ## Components
 

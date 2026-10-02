@@ -8,10 +8,10 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile-header-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/profile-header-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-header-desktop-dark.svg">
-  <img src="assets/profile-header-desktop-light.svg" alt="Lim Zi Chao — Making information useful. Search, data, and AI systems. NUS, Singapore." width="100%">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile-header-mobile-dark.svg?v=2">
+  <source media="(max-width: 600px)" srcset="assets/profile-header-mobile-light.svg?v=2">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-header-desktop-dark.svg?v=2">
+  <img src="assets/profile-header-desktop-light.svg?v=2" alt="Lim Zi Chao — Making information useful. Search, data, and AI systems. NUS, Singapore." width="100%">
 </picture>
 
 <p>
