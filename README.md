@@ -1,17 +1,17 @@
 <!--
 THESIS: An engineering monograph: distinctive authorship with evidence readers can inspect.
-OWN-WORLD: Glacier and deep petroleum, burnt-orange plotter contours, oversized outlined Manrope, native GitHub prose.
+OWN-WORLD: Glacier and deep petroleum, a burnt-orange LZC monogram, oversized outlined Manrope, native GitHub prose.
 STORY: Meet the engineer, inspect selected systems, understand experience, visit the portfolio or make contact.
-FIRST VIEWPORT: Two-line name owns the left half; dense mathematical contours occupy the right. Mobile recomposes vertically. Portfolio link and current role sit immediately below.
+FIRST VIEWPORT: Two-line name owns the left half; an original geometric LZC monogram occupies the right. Mobile recomposes vertically. Portfolio link and current role sit immediately below.
 FORM: Computer-science monograph, candidate 7, seed e2c7aee5. User delegated direct design/build. No invented interaction; native disclosure reveals technical depth.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile-header-mobile-dark.svg?v=2">
-  <source media="(max-width: 600px)" srcset="assets/profile-header-mobile-light.svg?v=2">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-header-desktop-dark.svg?v=2">
-  <img src="assets/profile-header-desktop-light.svg?v=2" alt="Lim Zi Chao — Making information useful. Search, data, and AI systems. NUS, Singapore." width="100%">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/profile-header-mobile-dark.svg?v=3">
+  <source media="(max-width: 600px)" srcset="assets/profile-header-mobile-light.svg?v=3">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-header-desktop-dark.svg?v=3">
+  <img src="assets/profile-header-desktop-light.svg?v=3" alt="Lim Zi Chao — Making information useful. Original LZC monogram. Search, data, and AI systems. NUS, Singapore." width="100%">
 </picture>
 
 <p>

@@ -5,7 +5,6 @@ Display text is outlined from the bundled, OFL-licensed Manrope fonts.
 """
 from pathlib import Path
 from html import escape
-import math
 from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
 
@@ -37,39 +36,18 @@ def svg(width, height, title, desc, content, background):
 {content}
 </svg>"""
 
-def field(left, top, width, height, color):
-    # Closed, smoothly rounded contours share one silhouette and a clear aperture.
-    # Fit the complete Bezier control hull to a reserved artwork box: no cropping.
-    count = 64
-    points = []
-    for j in range(count):
-        t = 2 * math.pi * j / count
-        radius = 1 + .16 * math.cos(3 * t + .45) + .04 * math.sin(t)
-        angle = t - math.pi / 10
-        points.append((radius * math.cos(angle), radius * math.sin(angle)))
-    segments = []
-    for j in range(count):
-        previous, start, end, following = [points[k % count] for k in (j - 1, j, j + 1, j + 2)]
-        control_a = tuple(start[k] + (end[k] - previous[k]) / 6 for k in (0, 1))
-        control_b = tuple(end[k] - (following[k] - start[k]) / 6 for k in (0, 1))
-        segments.append((control_a, control_b, end))
-    hull = points + [p for segment in segments for p in segment]
-    min_x, max_x = min(p[0] for p in hull), max(p[0] for p in hull)
-    min_y, max_y = min(p[1] for p in hull), max(p[1] for p in hull)
-    center_x, center_y = (min_x + max_x) / 2, (min_y + max_y) / 2
-    def position(point, scale):
-        return (left + width / 2 + (point[0] - center_x) * scale * width / (max_x - min_x),
-                top + height / 2 + (point[1] - center_y) * scale * height / (max_y - min_y))
-    paths = []
-    for i in range(34):
-        scale = .30 + .70 * i / 33
-        x, y = position(points[0], scale)
-        commands = [f'M {x:.2f},{y:.2f}']
-        for segment in segments:
-            coordinates = ' '.join(f'{x:.2f},{y:.2f}' for x, y in (position(point, scale) for point in segment))
-            commands.append(f'C {coordinates}')
-        paths.append(f'<path d="{" ".join(commands)} Z"/>')
-    return f'<g data-artwork="contour-mark" fill="none" stroke="{color}" stroke-width="2" stroke-linejoin="round">' + ''.join(paths) + '</g>'
+def monogram(left, top, size, color):
+    # L is the family initial; Z and C stay grouped as the given-name initials.
+    # A shared 32-unit module ties the straight L/Z to the rounded, open C.
+    paths = [
+        'M16 16H48V272H80V304H16Z',
+        'M88 16H304V48L148 112H304V144H88V112L244 48H88Z',
+        'M304 176H152C116.65 176 88 204.65 88 240C88 275.35 116.65 304 152 304H304V272H152C134.33 272 120 257.67 120 240C120 222.33 134.33 208 152 208H304Z',
+    ]
+    return (f'<g data-artwork="lzc-monogram" fill="{color}" '
+            f'transform="translate({left} {top}) scale({size / 320:.6f})" '
+            'aria-label="LZC: Lim Zi Chao">' +
+            ''.join(f'<path d="{path}"/>' for path in paths) + '</g>')
 
 for theme in ('light', 'dark'):
     dark = theme == 'dark'
@@ -82,16 +60,16 @@ for theme in ('light', 'dark'):
             width, height = 640, 780
             parts = [text('LIM', 36, 112, 99, ink, 800, -3), text('ZI CHAO', 35, 224, 112, ink, 800, -3)]
             parts += [text('Making information useful.', 39, 280, 26, ink)]
-            parts += [field(89, 330, 462, 324, accent)]
+            parts += [monogram(140, 322, 360, accent)]
             parts += [f'<path d="M40 698H600" stroke="{ink}" opacity=".28"/>', text('SEARCH / DATA / AI SYSTEMS', 40, 738, 22, ink)]
         else:
             width, height = 1280, 500
             parts = [text('LIM', 46, 173, 162, ink, 800, -5), text('ZI CHAO', 49, 335, 160, ink, 800, -5)]
             parts += [text('Making information useful.', 54, 402, 28, ink)]
-            parts += [field(768, 48, 426, 356, accent)]
+            parts += [monogram(810, 48, 356, accent)]
             parts += [f'<path d="M54 440H1226" stroke="{ink}" opacity=".28"/>', text('SEARCH / DATA / AI SYSTEMS', 54, 478, 21, ink), text('NUS / SINGAPORE', 995, 478, 18, muted)]
         name = f'profile-header-{"mobile" if mobile else "desktop"}-{theme}.svg'
-        (ASSETS / name).write_text(svg(width,height,'Lim Zi Chao — Making information useful.','Search, data, and AI systems. Original nested mathematical contours accompany the typography.', ''.join(parts), ground))
+        (ASSETS / name).write_text(svg(width,height,'Lim Zi Chao — Making information useful.','Search, data, and AI systems. An original geometric LZC monogram groups the surname initial L with the given-name initials ZC.', ''.join(parts), ground))
 
     # A literal retrieval diagram, not an illustrative performance chart.
     for mobile in (False, True):

@@ -43,7 +43,7 @@ components:
 
 **Creative North Star: "Engineering Monograph"**
 
-An engineering monograph pairs an unmistakable name with inspectable work. Original nested mathematical contours bring authorship to the opening; a literal retrieval diagram makes the same visual language useful inside the project evidence. Glacier and deep petroleum surfaces carry warm orange geometry, with outlined Manrope lettering giving the artwork a precise, substantial voice.
+An engineering monograph pairs an unmistakable name with inspectable work. An original LZC monogram brings authorship to the opening; a literal retrieval diagram makes the same visual language useful inside the project evidence. Glacier and deep petroleum surfaces carry a warm orange geometric signature, with outlined Manrope lettering giving the artwork a precise, substantial voice.
 
 The surrounding document belongs to GitHub. Selectable prose, real links, headings, tables, and native disclosures carry the factual story. The artwork is static and self-contained. This record refreshes the obsolete graphite/cobalt 3D-banner direction to match the implemented README and eight repository-owned SVGs.
 
@@ -57,7 +57,7 @@ The surrounding document belongs to GitHub. Selectable prose, real links, headin
 
 ### Primary
 
-Burnt orange defines contours, connector strokes, and fusion blocks on light artwork. Warm coral performs those same roles on dark artwork. These are paired theme accents, not independent categories or status colors.
+Burnt orange defines the monogram, connector strokes, and fusion blocks on light artwork. Warm coral performs those same roles on dark artwork. These are paired theme accents, not independent categories or status colors.
 
 ### Neutral
 
@@ -85,25 +85,25 @@ The README is one native reading column. Project sections use headings, prose, a
 
 Artwork uses a full-width image with proportional height. Header viewBoxes are 1280 × 500 on desktop and 640 × 780 on mobile; retrieval diagrams are 1280 × 365 and 640 × 630. At a maximum viewport width of 600px, picture sources choose mobile artwork. Source order is dark-mobile, light-mobile, dark-desktop, then the light-desktop image fallback. Preserve that ordering so a general dark source does not preempt the mobile source.
 
-The desktop header balances the name against the contour field; mobile stacks name, sentence, contour, and discipline line. The retrieval diagram moves from side-by-side convergence into vertically arranged stages. Artwork margins are authored per composition rather than instances of a shared spacing scale. GitHub controls the prose spacing and available reading width.
+The desktop header balances the name against the LZC monogram; mobile stacks name, sentence, monogram, and discipline line. The retrieval diagram moves from side-by-side convergence into vertically arranged stages. Artwork margins are authored per composition rather than instances of a shared spacing scale. GitHub controls the prose spacing and available reading width.
 
 **The Recomposition Rule.** Below the picture breakpoint, select the dedicated mobile composition instead of shrinking the desktop artwork into a narrow column.
 
 ## Elevation & Depth
 
-All art is flat. Thirty-four smooth, closed Bézier contours share a rounded triangular silhouette and central aperture. Their complete control hull fits within a reserved artwork box, preserving clear space on every side. They are original two-dimensional geometry, not a measured performance graph. Thin rules separate contextual information. The retrieval illustration uses literal connector geometry and a solid fusion block. There are no custom hover elevations or animations.
+All art is flat. The banner mark combines a tall L with a stacked Z and C: the family-name initial sits alongside the two given-name initials. The letters are original filled paths with a shared 32-unit weight; the C uses a rounded bowl while the L and Z retain straight architectural edges. Thin rules separate contextual information. The retrieval illustration uses literal connector geometry and a solid fusion block. There are no custom hover elevations or animations.
 
 **The Flat Geometry Rule.** Use line density, contrast, and negative space for structure; the artwork has no shadows, gradients, or simulated 3D material.
 
 ## Shapes
 
-Artwork bounds and fusion blocks are square rectangles. The header's fluid closed contours contrast with the diagram's orthogonal branching connectors. The field uses a 2-unit stroke; diagram connectors use 3-unit strokes in SVG coordinates. Directional arrowheads in the technical diagram are drawn paths that explain data flow. They are distinct from the removed outbound-link glyphs.
+Artwork bounds and fusion blocks are square rectangles. The custom LZC mark uses a 320-unit coordinate system with a 16-unit inset. All three letters stay inside the banner, without a container or decorative outline. Diagram connectors use 3-unit strokes in SVG coordinates; their drawn arrowheads explain data flow.
 
 ## Components
 
 ### Identity artwork
 
-Four header SVGs pair theme and viewport variants. Their composition contains the two-line name (LIM / ZI CHAO), sentence, original contour field, and discipline line; the desktop version also includes the NUS/Singapore annotation. The diagram and header share the artwork palettes and outlined font weights. Images have meaningful alt text, while each SVG also includes a title and description. They are static images with no hover or focus states.
+Four header SVGs pair theme and viewport variants. Their composition contains the two-line name (LIM / ZI CHAO), sentence, original LZC monogram, and discipline line; the desktop version also includes the NUS/Singapore annotation. The diagram and header share the artwork palettes and outlined font weights. Images have meaningful alt text, while each SVG also includes a title and description. They are static images with no hover or focus states.
 
 ### Retrieval illustration
 
