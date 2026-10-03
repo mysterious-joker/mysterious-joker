@@ -25,7 +25,7 @@ I’m interested in the work between a promising idea and a dependable system: r
 
 ## Selected Projects
 
-### [Shopping Copilot](https://github.com/mysterious-joker/TTSC)
+### [Shopping Copilot](https://github.com/i-anything/TTSC)
 
 **5th place · TikTok TechJam 2026 · Team lead**
 
@@ -35,7 +35,7 @@ I’m interested in the work between a promising idea and a dependable system: r
 I led a five-person team, designed and implemented the hybrid retrieval architecture, and presented the system at TikTok Singapore. Lexical and semantic search combine through reciprocal-rank fusion; route gating and structured-evidence reranking refine the results.
 
 **Python · SQL · SQLite FTS5 · ONNX Runtime**<br>
-[Source & technical documentation](https://github.com/mysterious-joker/TTSC)
+[Source & technical documentation](https://github.com/i-anything/TTSC)
 
 <details>
 <summary><strong>Engineering notes & evaluation context</strong></summary>
@@ -48,7 +48,7 @@ I led a five-person team, designed and implemented the hybrid retrieval architec
 
 These are development-set results recorded in the original profile, not production guarantees. Hardware, workload, and evaluation distribution affect performance. The team implementation began from a competition-kit fork.
 
-[Team contributions](https://github.com/mysterious-joker/TTSC#team-contributions)
+[Team contributions](https://github.com/i-anything/TTSC#team-contributions)
 
 </details>
 
