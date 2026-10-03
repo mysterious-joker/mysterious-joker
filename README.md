@@ -25,7 +25,7 @@ I’m interested in the work between a promising idea and a dependable system: r
 
 ## Selected Projects
 
-### [Shopping Copilot](https://github.com/i-anything/TTSC)
+### 1. [Shopping Copilot](https://github.com/i-anything/TTSC)
 
 **5th place · TikTok TechJam 2026 · Team lead**
 
@@ -48,11 +48,9 @@ I led a five-person team, designed and implemented the hybrid retrieval architec
 
 These are development-set results recorded in the original profile, not production guarantees. Hardware, workload, and evaluation distribution affect performance. The team implementation began from a competition-kit fork.
 
-[Team contributions](https://github.com/i-anything/TTSC#team-contributions)
-
 </details>
 
-### [Plutus](https://github.com/lzc-nus/Plutus)
+### 2. [Plutus](https://github.com/lzc-nus/Plutus)
 
 **Financial software · NUS Orbital, Apollo level**
 
@@ -61,16 +59,7 @@ A deployed financial workspace connecting assets, liabilities, cash flow, and pl
 **Next.js · TypeScript · FastAPI · PostgreSQL · Docker**<br>
 [Explore the source](https://github.com/lzc-nus/Plutus)
 
-### [Green Chonk](https://github.com/lzc-nus/ip)
-
-**A task companion, built to remember**
-
-A JavaFX application for todos, deadlines, and events, with persistent storage, date-aware scheduling, a command-line fallback, and regression tests. Developed from the NUS Software Engineering course starter.
-
-**Java · JavaFX · Gradle · JUnit**<br>
-[Explore the source](https://github.com/lzc-nus/ip) · [User guide](https://lzc-nus.github.io/ip/)
-
-### [Ideas in Motion](https://limzichao.com)
+### 3. [Ideas in Motion](https://limzichao.com)
 
 **This work, in another dimension**
 
@@ -78,6 +67,15 @@ My interactive portfolio: two visual worlds, procedural Three.js scenes, scroll 
 
 **React · TypeScript · Three.js · GSAP**<br>
 [Enter the portfolio](https://limzichao.com)
+
+### 4. [Green Chonk](https://github.com/lzc-nus/ip)
+
+**A task companion, built to remember**
+
+A JavaFX application for todos, deadlines, and events, with persistent storage, date-aware scheduling, a command-line fallback, and regression tests. Developed from the NUS Software Engineering course starter.
+
+**Java · JavaFX · Gradle · JUnit**<br>
+[Explore the source](https://github.com/lzc-nus/ip) · [User guide](https://lzc-nus.github.io/ip/)
 
 ## Behind the systems
 
@@ -97,22 +95,22 @@ I work on Python/SQL infrastructure connecting market information and governed P
 **Student Associate — NUS Libraries**<br>
 December 2025–January 2026 · Singapore
 
-Supported archival digitisation and cataloguing, including scanning, labelling, organising, and validating document records. Collaborated on a PowerShell automation workflow for batch renaming, output standardisation, and category-based organisation, then checked the outputs for consistency.
+-Supported archival digitisation and cataloguing, including scanning, labelling, organising, and validating document records. Collaborated on a PowerShell automation workflow for batch renaming, output standardisation, and category-based organisation, then checked the outputs for consistency.
 
 **Teacher — SJK(C) Poay Chai**<br>
 May–July 2025 · Iskandar Puteri
 
-Taught mathematics, languages, arts, and physical education, adapting lessons to different learning speeds. Developed clear explanations of abstract concepts while managing classroom activities and student engagement.
+-Taught mathematics, languages, arts, and physical education, adapting lessons to different learning speeds. Developed clear explanations of abstract concepts while managing classroom activities and student engagement.
 
 **Data Entry Officer, KYC Project — VentureHaven**<br>
 February–March 2025 · Johor Bahru
 
-Entered and validated client records across internal systems and spreadsheets. Reviewed compliance documents, organised records for traceability, and coordinated with clients and colleagues to resolve missing information.
+-Entered and validated client records across internal systems and spreadsheets. Reviewed compliance documents, organised records for traceability, and coordinated with clients and colleagues to resolve missing information.
 
 **Boarding Assistant — Raffles American School**<br>
 January–February 2025 · Iskandar Puteri
 
-Supported students, parents, and staff in a multicultural environment, including translation and guidance. Coordinated schedules and activities, resolved routine student issues, and escalated concerns when needed.
+-Supported students, parents, and staff in a multicultural environment, including translation and guidance. Coordinated schedules and activities, resolved routine student issues, and escalated concerns when needed.
 
 </details>
 
